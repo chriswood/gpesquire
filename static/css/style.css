@@ -1,0 +1,19 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7D9B99;
+    text-align: center;
+    width: 1024px;
+    height: 100%;
+}
+a, h1 {
+    color: #EFF4EE;
+}
+
+/* nav menu */
+.menu {
+    text-align: center;
+    color: #EFF4EE;
+    font-size: 20px;
+    vertical-align: top;
+}
