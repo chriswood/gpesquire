@@ -1,15 +1,15 @@
 body {
     margin-left: auto;
     margin-right: auto;
-    background-color: #7D9B99;
+    background-color: #000000;
     text-align: center;
-    width: 1024px;
+    width: 1366px;
     height: 100%;
 }
 a, h1 {
     color: #EFF4EE;
 }
-
+Ce9D71
 /* nav menu */
 .menu {
     text-align: center;
@@ -17,3 +17,4 @@ a, h1 {
     font-size: 20px;
     vertical-align: top;
 }
+/*background-color: #A85D84;*/
