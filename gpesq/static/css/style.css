@@ -1,0 +1,70 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B4B5BB;
+    text-align: center;
+    width: 1080px;
+    height: 100%;
+}
+a, h1 {
+    color: #EFF4EE;
+}
+
+p {color: #46797C;}
+
+.main {
+    text-align: center;
+    width: 1080px;
+    border: 1px solid #232323;
+}
+/* nav menu */
+.menu {
+    text-align: center;
+    color: #EFF4EE;
+    font-size: 20px;
+    vertical-align: top;
+}
+.item {
+    display: inline;
+    text-decoration: underline;
+}
+
+/* page */
+.floatleft {
+    float: left;
+    width: 500px;
+}
+.floatright {
+    float: right;
+    height: 400px;
+    width: 500px
+}
+
+/* posts */
+/* POSTS on index */
+.posts_container {
+    padding: 12px;
+    border-spacing: 0px 20px;
+}
+
+.message {
+    vertical-align: top;
+    text-align: left;
+    background-color: #938896; /* #5B8582; B9BFCA*/
+    padding: 10px 10px 0px;
+    width: 100%;
+    /*border-left: 20px solid transparent;*/
+    border-radius: 20px 10px 20px 10px;
+    border: 1px solid #232323;
+    font-size: 14px;
+}
+.postheader {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    color: #232323; /*455779;*/
+}
+
+/*Your Order Number is: 826223-4317930367
+b4b5bb

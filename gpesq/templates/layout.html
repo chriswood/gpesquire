@@ -3,16 +3,12 @@
   {% include 'head.html' %}
   <body>
       <div id="header">
-        <img src="{{STATIC_URL}}images/banner.jpg" width=1366px class="round">
+        <img src="{{STATIC_URL}}images/banner.jpg" width=556px class="round">
       </div>
-      <div id='content'>
-        <div class="menu">
-          <div class="item"><a href="/">home</a></div> |
-          <div class="item"><a href="/">create</a></div> |
-        </div>
-        {% block body %}
-        {% endblock %}
-      </div>
+
+    {% block body %}
+    {% endblock %}
+
       <div id="footer">
         &copy; Copyright 2015 by CHRIS WOOD LUXURIANT ENTERPRISES
       </div>

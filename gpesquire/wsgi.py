@@ -8,7 +8,12 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gpesquire.settings")
-
+import sys
 from django.core.wsgi import get_wsgi_application
+
+sys.path.append('/var/www/chriswood.cool/')
+sys.path.append('/var/www/chriswood.cool/gpesquire/')
+os.environ['PYTHON_EGG_CACHE'] = '/var/www/chriswood.cool/.python-egg'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+
 application = get_wsgi_application()

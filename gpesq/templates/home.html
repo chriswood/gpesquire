@@ -1,5 +1,19 @@
 {% extends "layout.html" %}
 
 {% block body %}
-heeeeeeeeeeey maaaaaane
+<div class="main">
+    <table class="posts_container">
+        <tr>
+            <td class="message">
+                 <div class='postheader'>plans</div>
+                 {% for p in plans %}
+                 {{ p.description }}
+                 <div class='postdate'>{{ p.plan_date }}</div>
+                 {% endfor %}
+
+            </td>
+        </tr>
+        <tr><td>footnotes</td></tr>
+          </table>
+</div>
 {% endblock %}
