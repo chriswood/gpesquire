@@ -2,18 +2,38 @@
 
 {% block body %}
 <div class="main">
-    <table class="posts_container">
-        <tr>
-            <td class="message">
-                 <div class='postheader'>plans</div>
-                 {% for p in plans %}
-                 {{ p.description }}
-                 <div class='postdate'>{{ p.plan_date }}</div>
-                 {% endfor %}
-
-            </td>
-        </tr>
-        <tr><td>footnotes</td></tr>
-          </table>
+  <table class="plans_container">
+    <tr>
+      <td class="plan">
+        {% for plan in plans %}
+          <table class='plan_data'>
+          <tr><td class='plan_desc'>{{ plan.description }} - {{ plan.date_added }}</td></tr>
+          {% for point in plan.points.all %}
+              {% if forloop.first %}
+                <tr>
+                  <td>Label</td>
+                  <td>Latitude</td>
+                  <td>Longitude</td>
+                  <td>Error (meters)</td>
+                  <td>Date added</td>
+                  <td>Description</td>
+                  <td></td>
+                </tr>
+              {% endif %}
+              <tr>
+                <td>{{ point.label }}</td>
+                <td>{{ point.lat }}</td>
+                <td>{{ point.lon }}</td>
+                <td>{{ point.altitude }}</td>
+                <td>{{ point.date_added }}</td>
+                <td>{{ point.description }}</td>
+              </tr>
+            </table>
+          {% endfor %}
+        {% endfor %}
+      </td>
+    </tr>
+    <tr><td>footnotes</td></tr>
+  </table>
 </div>
 {% endblock %}

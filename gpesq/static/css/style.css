@@ -5,28 +5,15 @@ body {
     text-align: center;
     width: 1080px;
     height: 100%;
-}
-a, h1 {
-    color: #EFF4EE;
+    font-family: "Verdana", Geneva, Sans-Serif;
+    font-size: 14px;
 }
 
 p {color: #46797C;}
 
 .main {
-    text-align: center;
     width: 1080px;
     border: 1px solid #232323;
-}
-/* nav menu */
-.menu {
-    text-align: center;
-    color: #EFF4EE;
-    font-size: 20px;
-    vertical-align: top;
-}
-.item {
-    display: inline;
-    text-decoration: underline;
 }
 
 /* page */
@@ -40,30 +27,30 @@ p {color: #46797C;}
     width: 500px
 }
 
-/* posts */
-/* POSTS on index */
-.posts_container {
-    padding: 12px;
-    border-spacing: 0px 20px;
+table, tr, td {
+    border: 0px solid black;
 }
-
-.message {
+.plans_container {
+    padding: 12px;
+}
+.plan_data {
+    border-spacing: 15px;
+    margin-left: 10px;
+}
+.plan_desc {
+    margin-left: 10px;
+}
+.plan {
     vertical-align: top;
     text-align: left;
     background-color: #938896; /* #5B8582; B9BFCA*/
-    padding: 10px 10px 0px;
     width: 100%;
-    /*border-left: 20px solid transparent;*/
+    border: 3px solid #232323;
     border-radius: 20px 10px 20px 10px;
-    border: 1px solid #232323;
-    font-size: 14px;
 }
-.postheader {
-    text-align: center;
-    padding: 0px;
-    margin-bottom: 0px;
-    font-size: 17px;
-    color: #232323; /*455779;*/
+.plan_header {
+    text-align: left;
+    margin-left: 10px;
 }
 
 /*Your Order Number is: 826223-4317930367

@@ -6,7 +6,7 @@ from gpesq.models import Plans
 
 def index(request, p_count=None):
     '''main page'''
-    plans = Plans.objects.all()
+    plans = Plans.objects.select_related('points').all()
     context = {
         'title': 'G.P. Esquire',
         'plans': plans,
