@@ -3,6 +3,7 @@ from django.template import RequestContext
 from gpesq.models import Plans, Points
 from django.views.decorators.csrf import csrf_exempt
 from django.core import serializers
+from django.core.exceptions import ValidationError
 import json
 
 # Create your views here.
@@ -38,7 +39,7 @@ def add_point(request, method='POST'):
             p.full_clean()
             p.save()
             response = json.dumps({'success': '1', 'error': ''})
-        except ValidationError, e:
-            response = json.dumps({'success': '1', 'error': e.message})
+        except ValidationError:
+            response = json.dumps({'success': '1', 'error': 'Invalid field values'})
 
         return HttpResponse(response, content_type='application/json')
