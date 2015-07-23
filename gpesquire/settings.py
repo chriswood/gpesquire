@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
+DB_PATH = os.environ['db_path']
+#DB_PATH = BASE_DIR
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -60,7 +61,7 @@ WSGI_APPLICATION = 'gpesquire.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'gpesq.sqlite3'),
+        'NAME': os.path.join(DB_PATH, 'gpesq.sqlite3'),
     }
 }
 

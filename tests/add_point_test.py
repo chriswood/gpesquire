@@ -6,9 +6,9 @@ import json
 
 # build django serialized object type json
 #dso = {'fields': {'plan_id': 1, 'lat': '36.123456', 'lon':'-86.345345', 'meters_error': 3}}
-dso = {'plan_id': 1, 'lat': '55.123456', 'lon':'-86.345345', 'meters_error': 3}
+dso = {'plan_id': 1, 'lat': '25.123456', 'lon':'-86.345345', 'meters_error': 3}
 jdata = json.dumps(dso)
 #response = urllib2.urlopen("http://127.0.0.1:8000/add_point/", jdata)
-response = urllib2.urlopen("http://chriswood.cool/add_point/", jdata)
+response = urllib2.urlopen("http://127.0.0.1:8000/add_point/", jdata)
 print(response)
 print("done")

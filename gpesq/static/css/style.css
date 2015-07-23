@@ -13,7 +13,6 @@ p {color: #46797C;}
 
 .main {
     width: 1080px;
-    border: 1px solid #232323;
 }
 
 /* page */
@@ -39,6 +38,9 @@ table, tr, td {
 }
 .plan_desc {
     margin-left: 10px;
+    color: #DDDEDE;
+    font-size: 17px;
+    text-align: center;
 }
 .plan {
     vertical-align: top;
@@ -46,7 +48,24 @@ table, tr, td {
     background-color: #938896; /* #5B8582; B9BFCA*/
     width: 100%;
     border: 3px solid #232323;
-    border-radius: 20px 10px 20px 10px;
+    border-radius: 25px;
+}
+.intro_text_container {
+    vertical-align: top;
+    text-align: left;
+    background-color: #938896;
+    width: 100%;
+    border: 3px solid #232323;
+    border-radius: 25px;
+    padding: 20px;
+}
+.intro_text {
+
+
+    color: #DDDEDE;
+
+
+
 }
 .plan_header {
     text-align: left;

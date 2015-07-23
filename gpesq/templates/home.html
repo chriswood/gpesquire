@@ -4,11 +4,20 @@
 <div class="main">
   <table class="plans_container">
     <tr>
+      <td class="intro_text_container">
+          <p class="intro_text">This is a page based around work I have done on a GPS based project.
+                                I am storing waypoints taken via an adafruit "Ultimate GPS" module
+                                hooked to a raspberry pi. These are stored in a sqlite database.
+                                </p>
+          <p class="intro_text">Below are plans and their related waypoints that I have taken. </p>
+      </td>
+    </tr>
+    <tr>
       <td class="plan">
         {% for plan in plans %}
           <table class='plan_data'>
-          <tr><td class='plan_desc'>{{ plan.description }} - {{ plan.date_added }}</td></tr>
-          {% for point in plan.points.all %}
+            <tr><td class='plan_desc'>{{ plan.description }} - {{ plan.date_added }}</td></tr>
+            {% for point in plan.points.all %}
               {% if forloop.first %}
                 <tr>
                   <td>Label</td>
@@ -28,9 +37,9 @@
                 <td>{{ point.date_added }}</td>
                 <td>{{ point.description }}</td>
               </tr>
-            </table>
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
+        </table>
       </td>
     </tr>
     <tr><td>footnotes</td></tr>
